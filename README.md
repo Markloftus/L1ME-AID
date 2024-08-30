@@ -1,4 +1,4 @@
-# L1ME-AID
+# L1ME-AID (beta version)
 ## L1ME-AID (L1 Mediated Annotation and Insertion Detection)
 
 L1ME-AID is a simple python script that takes two files as input:
