@@ -24,3 +24,7 @@ L1ME-AID is a simple python script that takes two files as input:
 
 ## Minimum Code Necessary:
 python limeaid.py -i /home/mark/Desktop/MEI_Group/HGSVC2/insertions/hgsvc2_INS.fasta -r /home/mark/Desktop/MEI_Group/HGSVC2/insertions/repeatmasker/hgsvc2_INS.fasta.out -o /home/mark/Desktop/test.csv
+- Provide an input Fasta file (-i), the Repeatmasker out file (-r), and the path to the csv that will be exported (-o).
+
+## Other options
+
