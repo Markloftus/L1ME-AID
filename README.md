@@ -39,7 +39,11 @@ python limeaid.py -i /home/mark/Desktop/MEI_Group/HGSVC2/insertions/hgsvc2_INS.f
 Please pay attention to the following columns:
   a) ID = the IDs need to be the same in the fasta file as the repeatmasker out file
   b) FILTER_RESULTS: This will provide you the results from the filters (divergences, lengths, etc.). It will say 'Good_Row' if the element passes the checks. HOWEVER, it will always say 'Good_Row' for sequences that are not Alu elements, L1s, and SVAs. Additionally, this DOES NOT take into account other columns (Tail_Type, Tail_Length, Unique_Element_Count).
-  c) 
+  c) Tail_Begins: Where in the sequence the tail begins (this number corresponds to the antisense orientation so we are numbering everything from left to right).
+  d) Tail_Type: This will try and tell you if there is a tail possibly what type is present. If you are looking for active mobile elements there should be a tail. FILTER_RESULTS will say 'Good_Row' even if there is NO TAIL. Make sure to filter your data by both columns.
+  d) Tail_Length: Tries to estimate the length of the tail. Finding tails uses a 5bp seed so the minimum should be 5bp.
+  e) Tail_Seed_Hits: How many unique 5bp seeds were found (not too important for the user).
+  f) Unique_Element_Count: 
 
 # Remember:
 This program will provide you all of the output no matter what the results are. You can always choose ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery.
