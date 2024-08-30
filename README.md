@@ -35,11 +35,11 @@ python limeaid.py -i /home/mark/Desktop/MEI_Group/HGSVC2/insertions/hgsvc2_INS.f
   e) -t, maximum tail start position, default=50; this will allow the start of an elements tail to begin at position 50 in the sequence (feel free to change as desired)
   f) -yl, allowable LINE subfamilies, default=L1HS,L1PA2; These are the L1 subfamilies that L1ME-AID will consider to be active. If for example an L1PA3 is annotated this will be noted as OLDER LINE SUBFAMILY
 
-# Remember:
-This program will provide you all of the output no matter what the results are. You can always choose ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery.
-
 ## Pay Attention
 Please pay attention to the following columns:
   a) ID = the IDs need to be the same in the fasta file as the repeatmasker out file
   b) FILTER_RESULTS: This will provide you the results from the filters (divergences, lengths, etc.). It will say 'Good_Row' if the element passes the checks. HOWEVER, it will always say 'Good_Row' for sequences that are not Alu elements, L1s, and SVAs. Additionally, this DOES NOT take into account other columns (Tail_Type, Tail_Length, Unique_Element_Count).
   c) 
+
+# Remember:
+This program will provide you all of the output no matter what the results are. You can always choose ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery.
