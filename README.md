@@ -40,4 +40,6 @@ This program will provide you all of the output no matter what the results are. 
 
 ## Pay Attention
 Please pay attention to the following columns:
-  a) 
+  a) ID = the IDs need to be the same in the fasta file as the repeatmasker out file
+  b) FILTER_RESULTS: This will provide you the results from the filters (divergences, lengths, etc.). It will say 'Good_Row' if the element passes the checks. HOWEVER, it will always say 'Good_Row' for sequences that are not Alu elements, L1s, and SVAs. Additionally, this DOES NOT take into account other columns (Tail_Type, Tail_Length, Unique_Element_Count).
+  c) 
