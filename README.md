@@ -6,7 +6,7 @@ L1ME-AID is a simple python script that takes two files as input:
   2) RepeatMasker .out file that was produced from running RepeatMasker on the Fasta file
 
 # Please Remember:
-This program will provide you all of the output no matter what the results are. You can always choose ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery.
+This program will provide you all of the output no matter the results. You can always choose to ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery. This is still in beta so it might not be perfect. I usually perform manual curation of calls after. 
 
 ## You will need to be able to import these libraries:
   1) import matplotlib.pyplot as plt
