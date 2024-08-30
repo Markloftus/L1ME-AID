@@ -1,5 +1,3 @@
-![Logo](https://github.com/Markloftus/L1ME-AID/limeaid.jpeg)
-
 # L1ME-AID (beta version)
 ## L1ME-AID (L1 Mediated Annotation and Insertion Detection)
 
