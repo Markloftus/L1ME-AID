@@ -2,7 +2,7 @@
 ## L1ME-AID (L1 Mediated Annotation and Insertion Detection)
 
 L1ME-AID is a simple python script that takes two files as input:
-  1) Fasta file of structural variation sequences you want to check for L1 Mediated transposition events (Mobile element insertions Alus, L1, SVA, etc.)
+  1) Fasta file of structural variation sequences you want to check for L1 mediated transposition events (Mobile element insertions Alus, L1, SVA, etc.)
   2) RepeatMasker .out file that was produced from running RepeatMasker on the Fasta file
 
 ## You will need to be able to import these libraries:
