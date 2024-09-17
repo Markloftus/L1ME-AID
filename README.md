@@ -50,6 +50,6 @@ Please pay attention to the following columns:<br>
   f) Tail_Type: This will try and tell you if there is a tail possibly what type is present. If you are looking for active mobile elements there should be a tail. FILTER_RESULTS will say 'Good_Row' even if there is NO TAIL. Make sure to filter your data by both columns.<br>
   g) Tail_Length: Tries to estimate the length of the tail. Finding tails uses a 5bp seed so the minimum should be 5bp.<br>
   h) Tail_Seed_Hits: How many unique 5bp seeds were found (not too important for the user).<br>
-  i) Unique_Element_Count: This will tell you if multiple subfamilies were identified in a sequence (Ex: <i>AluS</i>, <i>AluY</i>). This is more important for Alus. The code doesn't care about this column but it's important for the user to decide. Usually it's not a big deal if L1s or SVAs have multiple subfamilies as RepeatMasker will sometimes annotate pieces of the element separately. <br>
+  i) Unique_Element_Count: This will tell you if multiple subfamilies were identified in a sequence (Ex: <i>AluS</i>, <i>AluY</i>). This is more important for <i>Alu</i> elements. The code doesn't care about this column but it's important for the user to decide. Usually it's not a big deal if L1s or SVAs have multiple subfamilies as RepeatMasker will sometimes annotate pieces of the element separately. <br>
 
 
