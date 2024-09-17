@@ -1,6 +1,6 @@
 # L1ME-AID (beta version)
 ## L1ME-AID (L1 Mediated Annotation and Insertion Detection)
-<img src="limeaid.jpeg?raw=true" width="100" height="100">
+<img src="limeaid.jpeg?raw=true" width="250" height="250">
 
 L1ME-AID is a simple python script that takes two files as input:
   1) Fasta file of structural variation sequences you want to check for L1 mediated transposition events (Mobile element insertions Alus, L1, SVA, etc.)
