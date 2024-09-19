@@ -11,7 +11,7 @@ L1ME-AID is a simple python script that takes two files as input:
 Download the code and run the python file (see HOW TO RUN below).
 
 # Requirements:
-This program was tested with Linux (Mint 21.2). It has not been tested on Mac/PC.
+This program was tested on Linux (Mint 21.2). It has not been tested on Mac/PC.
 
 ## Hardware:
 A standard computer with enough RAM to support the in-memory operations/dataset you provide.
