@@ -60,3 +60,6 @@ Please pay attention to the following columns:<br>
 
 # Please Remember:
 This program will provide you all of the output no matter the results. You can always choose to ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery. This is still in beta so it might not be perfect. I usually perform manual curation of calls after. 
+
+# License
+This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
