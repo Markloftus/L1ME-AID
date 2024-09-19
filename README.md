@@ -10,9 +10,6 @@ L1ME-AID is a simple python script that takes two files as input:
 # Installation
 Download the code and run the python file (see HOW TO RUN below).
 
-# Please Remember:
-This program will provide you all of the output no matter the results. You can always choose to ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery. This is still in beta so it might not be perfect. I usually perform manual curation of calls after. 
-
 # Requirements:
 This program was tested with Linux (Mint 21.2). It has not been tested on Mac/PC.
 
@@ -61,4 +58,5 @@ Please pay attention to the following columns:<br>
   h) Tail_Seed_Hits: How many unique 5bp seeds were found (not too important for the user).<br>
   i) Unique_Element_Count: This will tell you if multiple subfamilies were identified in a sequence (Ex: <i>AluS</i>, <i>AluY</i>). This is more important for <i>Alu</i> elements. The code doesn't care about this column but it's important for the user to decide. Usually it's not a big deal if L1s or SVAs have multiple subfamilies as RepeatMasker will sometimes annotate pieces of the element separately. <br>
 
-
+# Please Remember:
+This program will provide you all of the output no matter the results. You can always choose to ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery. This is still in beta so it might not be perfect. I usually perform manual curation of calls after. 
