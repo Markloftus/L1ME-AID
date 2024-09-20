@@ -37,6 +37,10 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 python limeaid.py -i /home/mark/Desktop/MEI_Group/HGSVC2/insertions/hgsvc2_INS.fasta -r /home/mark/Desktop/MEI_Group/HGSVC2/insertions/repeatmasker/hgsvc2_INS.fasta.out -o /home/mark/Desktop/test.csv
 - Provide an input Fasta file (-i), the Repeatmasker out file (-r), and the path to the csv that will be exported (-o).
 
+## Demo:
+Check out the demo file for a subset of 10 random calls from the previous HGSVC callset (demo.fasta), a repeatmasker file on more than the ten (1kgpCallset.fasta.out), and the L1ME-AID out file (demo.outFile):
+You can see if it works for you by running this code: python limeaid.py -i demo.fasta -r 1kgpCallset.fasta.out -o ./demo.outFile
+
 ## Other options
 
   a) -rd, Repeat Divergence, default=20% divergence; 20% maximum divergence for reading through all the repeatmasker annotations (I would leave this but you can change it by providing an integer (-rd 10)). <br>
