@@ -34,13 +34,13 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 # HOW TO RUN:
 
 ## Minimum Code Necessary:
-python limeaid.py -i /home/mark/Desktop/MEI_Group/HGSVC2/insertions/hgsvc2_INS.fasta -r /home/mark/Desktop/MEI_Group/HGSVC2/insertions/repeatmasker/hgsvc2_INS.fasta.out -o /home/mark/Desktop/test.csv
+'python limeaid.py -i /home/mark/Desktop/MEI_Group/HGSVC2/insertions/hgsvc2_INS.fasta -r /home/mark/Desktop/MEI_Group/HGSVC2/insertions/repeatmasker/hgsvc2_INS.fasta.out -o /home/mark/Desktop/test.csv'
 - Provide an input Fasta file (-i), the Repeatmasker out file (-r), and the path to the csv that will be exported (-o).
 
 ## Demo:
 Check out the demo file for a subset of 10 random calls from the previous HGSVC callset (demo.fasta), a repeatmasker file on more than the ten (1kgpCallset.fasta.out), and the L1ME-AID out file (demo.outFile):</br>
 
-You can see if it works for you by running this code: python limeaid.py -i demo.fasta -r 1kgpCallset.fasta.out -o ./demo.outFile</br>
+You can see if it works for you by running this code: 'python limeaid.py -i demo.fasta -r 1kgpCallset.fasta.out -o ./demo.outFile'</br>
 The expected run time is less than 5 seconds for this demo. You should expect to get the same file as the demo.outFile provided. 
 
 ## Other options
