@@ -39,7 +39,8 @@ python limeaid.py -i /home/mark/Desktop/MEI_Group/HGSVC2/insertions/hgsvc2_INS.f
 
 ## Demo:
 Check out the demo file for a subset of 10 random calls from the previous HGSVC callset (demo.fasta), a repeatmasker file on more than the ten (1kgpCallset.fasta.out), and the L1ME-AID out file (demo.outFile):</br>
-You can see if it works for you by running this code: </br>python limeaid.py -i demo.fasta -r 1kgpCallset.fasta.out -o ./demo.outFile</br>
+
+You can see if it works for you by running this code: python limeaid.py -i demo.fasta -r 1kgpCallset.fasta.out -o ./demo.outFile</br>
 
 ## Other options
 
