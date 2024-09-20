@@ -40,7 +40,7 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 ## Demo:
 Check out the demo file for a subset of 10 random calls from the previous HGSVC callset (demo.fasta), a repeatmasker file on more than the ten (1kgpCallset.fasta.out), and the L1ME-AID out file (demo.outFile):</br>
 
-You can see if it works for you by running this code: 'python limeaid.py -i demo.fasta -r 1kgpCallset.fasta.out -o ./demo.outFile'</br>
+You can see if it works for you by running this code: `python limeaid.py -i demo.fasta -r 1kgpCallset.fasta.out -o ./demo.outFile`</br>
 The expected run time is less than 5 seconds for this demo. You should expect to get the same file as the demo.outFile provided. 
 
 ## Other options
