@@ -1,5 +1,5 @@
 # L1ME-AID (v1.0.0 beta)
-## L1ME-AID (L1 Mediated Annotation and Insertion Detection)
+## L1ME-AID (L1 Mediated Annotation and Insertion Detector)
 <p align="center">
 <img src="limeaid.jpeg?raw=true" width="350" height="350">
 </p>
