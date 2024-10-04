@@ -34,7 +34,7 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 # HOW TO RUN:
 
 ## Minimum Code Necessary:
-`python limeaid.py -i /home/mark/Desktop/MEI_Group/HGSVC2/insertions/hgsvc2_INS.fasta -r /home/mark/Desktop/MEI_Group/HGSVC2/insertions/repeatmasker/hgsvc2_INS.fasta.out -o /home/mark/Desktop/test.csv`
+`python limeaid.py -i /your/path/to/fastafile/hgsvc2.fasta -r /your/path/to/repeatmaskerfile/hgsvc2_INS.fasta.out -o /your/path/to/outfile/test.csv`
 - Provide an input Fasta file (-i), the Repeatmasker out file (-r), and the path to the csv that will be exported (-o).
 
 ## Demo:
