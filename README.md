@@ -35,7 +35,7 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 
 ## Minimum Code Necessary:
 `python limeaid.py -i /your/path/to/fastafile/hgsvc2.fasta -r /your/path/to/repeatmaskerfile/hgsvc2_INS.fasta.out -o /your/path/to/outfile/test.csv`
-- Provide an input Fasta file (-i), the Repeatmasker out file (-r), and the path to the csv that will be exported (-o).
+- Provide an input Fasta file (-i), the Repeatmasker .out file (-r), and the path to the csv that will be exported (-o).
 
 ## Demo:
 Check out the demo file for a subset of 10 random calls from the previous HGSVC callset (demo.fasta), a repeatmasker file on more than the ten (1kgpCallset.fasta.out), and the L1ME-AID out file (demo.outFile):</br>
