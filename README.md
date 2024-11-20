@@ -54,6 +54,7 @@ The expected run time is less than 5 seconds for this demo. You should expect to
   d) -u, upper length cutoff, default=50000, if a sequence is longer than this don't even bother<br>
   e) -t, maximum tail start position, default=50; this will allow the start of an elements tail to begin at position 50 in the sequence (feel free to change as desired)<br>
   f) -yl, allowable LINE subfamilies, default=L1HS,L1PA2; These are the L1 subfamilies that L1ME-AID will consider to be active. If for example an L1PA3 is annotated this will be noted as OLDER LINE SUBFAMILY<br>
+  g) -g, path to the reference genome utilized during SV calling (e.g., '/home/yourname/myfolder/hg38.fa'). *Note: Only provide a reference genome here if you want to have L1ME-AID try to call TSDs. If you do this you need to name the sequences in your fasta in a specific format (chromosome-position-anything else: chr1-101101-mysequence). L1ME-AID uses this chromosome and position information to look for the coordinate sequence that matches in your SV sequence. 
 
 ## Pay Attention
 Please pay attention to the following columns:<br>
