@@ -8,7 +8,7 @@
 </p>
 L1ME-AID is a simple python script that takes two files as input:
   1) Fasta file of structural variation sequences you want to check for L1 mediated transposition events (Mobile element insertions <i>Alu</i> elements, L1, SVA, etc.)
-  2) RepeatMasker .out file that was produced from running RepeatMasker on the Fasta file
+  2) RepeatMasker .out file that was produced from running RepeatMasker on the Fasta file.
 
 # Installation
 Download the code and run the python file (see HOW TO RUN below).
