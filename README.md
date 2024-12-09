@@ -1,6 +1,6 @@
 # Current Version: L1ME-AID (v1.1.1 beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
--Note: Version 1.1.0-beta now will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped.
+-Note: Version 1.1.0-beta (and on later versions) now will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped.
 
 ## L1ME-AID (L1 Mediated Annotation and Insertion Detector)
 <p align="center">
