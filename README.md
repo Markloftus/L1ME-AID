@@ -75,4 +75,5 @@ This program will provide you all of the output no matter the results. You can a
 This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
 
 # Log
+December 09, 2024: Fixed a bug where non-MEIs without TSDs were breaking the code. Version 1.1.1 was uploaded. Seems to work. 
 November 19, 2024: Verson 1.1.0-beta uploaded, added the -g functionality to call TSDs that are present within the SV sequence and the reference genome. 
