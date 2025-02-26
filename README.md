@@ -28,8 +28,8 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
   6) json - v2.0.9
   7) collections - Built-in (collections)
   8) from tqdm import tqdm
-  9) from Bio.Seq import Seq
-  10) from Bio import SeqIO
+  9) from Bio.Seq import Seq - v1.83
+  10) from Bio import SeqIO -v1.83
   11) more_itertools - v10.2.0
   12) argparse - v1.1
 
