@@ -21,18 +21,18 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 
 ## Python Dependencies:
   1) matplotlib
-  2) pandas
-  3) pysam
-  4) os
-  5) ast
-  6) numpy
-  7) json
-  8) collections
+  2) pandas - v2.2.1
+  3) pysam -  v0.22.0
+  4) os - Built-in (os)
+  5) ast - Built-in (ast)
+  6) numpy - v1.26.4
+  7) json - v2.0.9
+  8) collections - Built-in (collections)
   9) from tqdm import tqdm
   10) from Bio.Seq import Seq
   11) from Bio import SeqIO
-  12) more_itertools 
-  13) argparse
+  12) more_itertools - v10.2.0
+  13) argparse - v1.1
 
 # HOW TO RUN:
 
