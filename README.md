@@ -20,19 +20,18 @@ This program was tested on Linux (Mint 21.2). It has not been tested on Mac/PC.
 A standard computer with enough RAM to support the in-memory operations/dataset you provide.
 
 ## Python Dependencies:
-  1) matplotlib
-  2) pandas - v2.2.1
-  3) pysam -  v0.22.0
-  4) os - Built-in (os)
-  5) ast - Built-in (ast)
-  6) numpy - v1.26.4
-  7) json - v2.0.9
-  8) collections - Built-in (collections)
-  9) from tqdm import tqdm
-  10) from Bio.Seq import Seq
-  11) from Bio import SeqIO
-  12) more_itertools - v10.2.0
-  13) argparse - v1.1
+  1) pandas - v2.2.1
+  2) pysam -  v0.22.0
+  3) os - Built-in (os)
+  4) ast - Built-in (ast)
+  5) numpy - v1.26.4
+  6) json - v2.0.9
+  7) collections - Built-in (collections)
+  8) from tqdm import tqdm
+  9) from Bio.Seq import Seq
+  10) from Bio import SeqIO
+  11) more_itertools - v10.2.0
+  12) argparse - v1.1
 
 # HOW TO RUN:
 
