@@ -19,7 +19,8 @@ This program was tested on Linux (Mint 21.2). It has not been tested on Mac/PC.
 ## Hardware:
 A standard computer with enough RAM to support the in-memory operations/dataset you provide.
 
-## Python Dependencies (versions listed but the functions utilized are very basic it will most likely work with most versions):
+## Python Dependencies 
+(versions listed below but the functions utilized are very basic it will most likely work with most versions):
   1) pandas - v2.2.1
   2) pysam -  v0.22.0
   3) os - Built-in (os)
