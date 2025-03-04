@@ -1,4 +1,4 @@
-# Current Version: L1ME-AID (v1.1.2 beta)
+# Current Version: L1ME-AID (v1.2.0 beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
 -Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped.
 
@@ -33,6 +33,7 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
   10) from Bio import SeqIO -v1.83
   11) more_itertools - v10.2.0
   12) argparse - v1.1
+  13) from functools import reduce
 
 # HOW TO RUN:
 
@@ -75,6 +76,7 @@ This program will provide you all of the output no matter the results. You can a
 This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
 
 # Log
+March 4, 2025: L1ME-AID v1.2.0-beta was uploaded. Updated RepeatMaskerPatternFinder function as well as the iterative function application at the end. </br>
 January 17, 2025: L1ME-AID exports the file as a TSV instead of CSV now. </br>
 December 09, 2024: Fixed a bug where non-MEIs without TSDs were breaking the code. Version 1.1.1 was uploaded. Seems to work. </br>
 November 19, 2024: Verson 1.1.0-beta uploaded, added the -g functionality to call TSDs that are present within the SV sequence and the reference genome. 
