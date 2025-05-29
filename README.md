@@ -45,7 +45,7 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 Check out the demo files for a quick test of L1ME-AID:</br>
 
 You can see if it works for you by running this code: `python limeaid.py -i demo.fasta -r demo.fasta.out -o ./demo.outFile`</br>
-The expected run time is less than 5 seconds for this demo. You should expect to get the same file as the demo.outFile provided. 
+The expected run time is less than 1 second for this demo. You should expect to get the same file as the demoOutFile.tsv provided. 
 
 ## Other options
 
