@@ -1,0 +1,6 @@
+  bit   perc perc perc  query     position in query    matching repeat          position in repeat
+score   div. del. ins.  sequence  begin end   (left)   repeat   class/family  begin  end    (left)  ID
+
+  597    9.5  0.0  0.0  DYZ2_Con      9   574 (1846) + HSATI    Satellite          2    567    (1)   1  
+  239   17.4  0.0  5.3  DYZ2_Con    575   873 (1547) + AluSc8   SINE/Alu          13    296   (15)   2  
+  389   18.8  9.1  2.7  DYZ2_Con    905  2420    (0) + (TA)n    Simple_repeat      1   1610    (0)   3  
