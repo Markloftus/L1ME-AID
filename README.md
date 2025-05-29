@@ -39,7 +39,7 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 
 ## Minimum Code Necessary:
 `python limeaid.py -i /your/path/to/fastafile/hgsvc_INS.fasta -r /your/path/to/repeatmaskerfile/hgsvc_INS.fasta.out -o /your/path/to/outfile/hgsvc_INS_limeaid.tsv`
-- Provide an input Fasta file (-i), the Repeatmasker .out file (-r), and the path to the csv that will be exported (-o).
+- Provide an input Fasta file (-i), the Repeatmasker .out file (-r), and the path to the tsv that will be exported (-o).
 
 ## Demo:
 Check out the demo file for a subset of 10 random calls from the previous HGSVC callset (demo.fasta), a repeatmasker file on more than the ten (1kgpCallset.fasta.out), and the L1ME-AID out file (demo.outFile):</br>
@@ -76,6 +76,7 @@ This program will provide you all of the output no matter the results. You can a
 This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
 
 # Log
+May 29, 2025: Fixed minor bug. 
 March 4, 2025: L1ME-AID v1.2.0-beta was uploaded. Updated RepeatMaskerPatternFinder function as well as the iterative function application at the end. </br>
 January 17, 2025: L1ME-AID exports the file as a TSV instead of CSV now. </br>
 December 09, 2024: Fixed a bug where non-MEIs without TSDs were breaking the code. Version 1.1.1 was uploaded. Seems to work. </br>
