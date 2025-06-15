@@ -52,12 +52,12 @@ The expected run time is less than 1 second for this demo. You should expect to 
 
 ## Other options
 
-  a) -rd, Repeat Divergence, default=20% divergence; 20% maximum divergence for reading through all the repeatmasker annotations (I would leave this but you can change it by providing an integer (-rd 10)). <br>
-  b) -d, divergences, default=6,15,15 ; 6% for <i>Alu</i> elements, 15% for L1s and 15% for SVAs (provide a each number in this list format x,y,z, EXAMPLE: -d 5,10,15 )<br>
+  a) -rd, Repeat Divergence, default=20% divergence; 20% maximum divergence for reading through all the repeatmasker annotations (I would leave this but you can change it by providing an integer (-rd 10 - for 10% divergence maximum)). <br>
+  b) -d, divergences, default=6,15,15 ; 6% for <i>Alu</i> elements, 15% for L1s and 15% for SVAs (provide a each number in this list format x,y,z, EXAMPLE: -d 5,10,15 must have three numbers and each number corresponds to Alu,L1,SVA)<br>
   c) -l, length cutoffs, default=500,10000,10000; 500bp for <i>Alu</i> elements, 10kbp for L1, 10kbp for SVA (provide a each length in this list format x,y,z, EXAMPLE: -l 300,8000,3000) <br>
   d) -u, upper length cutoff, default=50000, if a sequence is longer than this don't even bother<br>
   e) -t, maximum tail start position, default=50; this will allow the start of an elements tail to begin at position 50 in the sequence (feel free to change as desired)<br>
-  f) -yl, allowable LINE subfamilies, default=L1HS,L1PA2; These are the L1 subfamilies that L1ME-AID will consider to be active. If for example an L1PA3 is annotated this will be noted as OLDER LINE SUBFAMILY<br>
+  f) -yl, allowable LINE subfamilies, default='L1HS,L1P1,L1PA1,L1PA2'; These are the L1 subfamilies that L1ME-AID will consider to be active. If for example an L1PA3 is annotated this will be noted as OLDER LINE SUBFAMILY<br>
   g) -g, path to the reference genome utilized during SV calling (e.g., '/home/yourname/myfolder/hg38.fa'). *Note: Only provide a reference genome here if you want to have L1ME-AID try to call TSDs. If you do this you need to name the sequences in your fasta in a specific format (chromosome-position-anything else: chr1-101101-mysequence). L1ME-AID uses this chromosome and position information to look for the coordinate sequence that matches in your SV sequence. 
 
 ## Pay Attention
