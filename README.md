@@ -79,7 +79,7 @@ This program will provide you all of the output no matter the results. You can a
 This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
 
 # Log
-June 15, 2025: Major updates to multiple functions. For example, Divergences now are length-adjusted where two+ of the same element annotations are noted in a sequence, orientations should be more accurate. 
+June 15, 2025: Major updates to multiple functions. For example, Divergences now are length-adjusted where two+ of the same element annotations are noted in a sequence, orientations should be more accurate.</br>
 May 29, 2025: Fixed minor bug. 
 March 4, 2025: L1ME-AID v1.2.0-beta was uploaded. Updated RepeatMaskerPatternFinder function as well as the iterative function application at the end. </br>
 January 17, 2025: L1ME-AID exports the file as a TSV instead of CSV now. </br>
