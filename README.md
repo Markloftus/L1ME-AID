@@ -1,5 +1,6 @@
 # Current Version: L1ME-AID (v1.3.0 beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
+-Note: Starting at Version 1.3.0 multiple column names have been adjusted. This is to better reflect that some sequences are not TEs. </br>
 -Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped.
 
 ***How can I cite?***</br>
@@ -63,9 +64,9 @@ The expected run time is less than 1 second for this demo. You should expect to 
 ## Pay Attention
 Please pay attention to the following columns:<br>
   a) ID = the IDs need to be the same in the fasta file as the repeatmasker out file<br>
-  b) TE_Percentage: What proportion of the sequence was annotated as specific elements<br>
-  c) TE_Designation: The type of element that makes up the largest proportion of the sequence<br>
-  d) FILTER_RESULTS: This will provide you the results from the filters (divergences, lengths, etc.). It will say 'Good_Row' if the element passes the checks. HOWEVER, it will always say 'Good_Row' for sequences that are not Alu elements, L1s, and SVAs. Additionally, this DOES NOT take into account other columns (Tail_Type, Tail_Length, Unique_Element_Count).<br>
+  b) Element_Percentage: What proportion of the sequence was annotated as specific elements<br>
+  c) Element_Designation: The type of element that makes up the largest proportion of the sequence<br>
+  d) FILTER_RESULTS: This will provide you the results from the filters (divergences, lengths, etc.). It will say 'Good_Row' if the element passes the checks. HOWEVER, it will always say 'Good_Row' for sequences that are not <i>Alu</i> elements, L1s, and SVAs. Additionally, this DOES NOT take into account other columns (Tail_Type, Tail_Length, Unique_Element_Count). If you are looking for YOUNG mobile element insertions then this column is important. If you are not or are more flexible on what you want to call just ignore this column. <br>
   e) Tail_Begins: Where in the sequence the tail begins (this number corresponds to the antisense orientation so we are numbering everything from left to right).<br>
   f) Tail_Type: This will try and tell you if there is a tail possibly what type is present. If you are looking for active mobile elements there should be a tail. FILTER_RESULTS will say 'Good_Row' even if there is NO TAIL. Make sure to filter your data by both columns.<br>
   g) Tail_Length: Tries to estimate the length of the tail. Finding tails uses a 5bp seed so the minimum should be 5bp.<br>
