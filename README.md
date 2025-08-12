@@ -80,11 +80,11 @@ This program will provide you all of the output no matter the results. You can a
 This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
 
 # Log
-July 1, 2025: Sometimes repeatmasker does not include an ID column (#14). Added a fix to work around this. </br>
-June 20, 2025: Fixed minor bug where TWIN PRIMING elements orientation was not caught with Tail Checks. </br>
-June 15, 2025: Major updates to multiple functions. For example, Divergences now are length-adjusted where two+ of the same element annotations are noted in a sequence, orientations should be more accurate.</br>
-May 29, 2025: Fixed minor bug. </br>
-March 4, 2025: L1ME-AID v1.2.0-beta was uploaded. Updated RepeatMaskerPatternFinder function as well as the iterative function application at the end. </br>
-January 17, 2025: L1ME-AID exports the file as a TSV instead of CSV now. </br>
-December 09, 2024: Fixed a bug where non-MEIs without TSDs were breaking the code. Version 1.1.1 was uploaded. Seems to work. </br>
+July 1, 2025: Sometimes repeatmasker does not include an ID column (#14). Added a fix to work around this. <br>
+June 20, 2025: Fixed minor bug where TWIN PRIMING elements orientation was not caught with Tail Checks. <br>
+June 15, 2025: Major updates to multiple functions. For example, Divergences now are length-adjusted where two+ of the same element annotations are noted in a sequence, orientations should be more accurate.<br>
+May 29, 2025: Fixed minor bug. <br>
+March 4, 2025: L1ME-AID v1.2.0-beta was uploaded. Updated RepeatMaskerPatternFinder function as well as the iterative function application at the end. <br>
+January 17, 2025: L1ME-AID exports the file as a TSV instead of CSV now. <br>
+December 09, 2024: Fixed a bug where non-MEIs without TSDs were breaking the code. Version 1.1.1 was uploaded. Seems to work. <br>
 November 19, 2024: Verson 1.1.0-beta uploaded, added the -g functionality to call TSDs that are present within the SV sequence and the reference genome. 
