@@ -1,18 +1,18 @@
 # Current Version: L1ME-AID (v1.3.2-beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
 -Note: Starting at Version 1.3.0-beta multiple column names have been adjusted. This is to better reflect that some sequences are not TEs. </br>
--Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped.
+-Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped.<br>
 
 ***How can I cite?***</br>
-We are currently working on polishing L1ME-AID and on a manuscript. Currently, if you are using L1ME-AID and wanting to cite it please use Logsdon, G.A., Ebert, P., Audano, P.A. et al. Complex genetic variation in nearly complete human genomes. Nature (2025). https://doi.org/10.1038/s41586-025-09140-6</br>
+We are currently working on polishing L1ME-AID and on a manuscript. Currently, if you are using L1ME-AID and wanting to cite it please use Logsdon, G.A., Ebert, P., Audano, P.A. et al. Complex genetic variation in nearly complete human genomes. Nature (2025). https://doi.org/10.1038/s41586-025-09140-6<br>
 
 ## L1ME-AID (L1 Mediated Annotation and Insertion Detector)
 <p align="center">
 <img src="limeaid.jpeg?raw=true" width="350" height="350">
 </p>
-L1ME-AID is a simple python script that takes two files as input:
-  1) Fasta file of structural variation sequences you want to check for L1 mediated transposition events (Mobile element insertions <i>Alu</i> elements, L1, SVA, etc.)
-  2) RepeatMasker .out file that was produced from running RepeatMasker on the Fasta file.
+L1ME-AID is a simple python script that takes two files as input:<br>
+  1) Fasta file of structural variation sequences you want to check for L1 mediated transposition events (Mobile element insertions <i>Alu</i> elements, L1, SVA, etc.)<br>
+  2) RepeatMasker .out file that was produced from running RepeatMasker on the Fasta file.<br>
 
 # Installation
 Download the code and run the python file (see HOW TO RUN below).
