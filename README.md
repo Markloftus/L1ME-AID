@@ -4,7 +4,7 @@
 -Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped.
 
 ***How can I cite?***</br>
-We are currently working on polishing L1ME-AID and on a manuscript. Currently, if you are using L1ME-AID and wanting to cite it please use Logsdon, G. A. et al. Complex genetic variation in nearly complete human genomes. bioRxivorg (2024) doi:10.1101/2024.09.24.614721.</br>
+We are currently working on polishing L1ME-AID and on a manuscript. Currently, if you are using L1ME-AID and wanting to cite it please use Logsdon, G.A., Ebert, P., Audano, P.A. et al. Complex genetic variation in nearly complete human genomes. Nature (2025). https://doi.org/10.1038/s41586-025-09140-6</br>
 
 ## L1ME-AID (L1 Mediated Annotation and Insertion Detector)
 <p align="center">
