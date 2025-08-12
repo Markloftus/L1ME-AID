@@ -24,20 +24,20 @@ This program was tested on Linux (Mint 21.2). It has not been tested on Mac/PC.
 A standard computer with enough RAM to support the in-memory operations/dataset you provide.
 
 ## Python Dependencies 
-(versions listed below but the functions utilized are very basic it will most likely work with most versions):
-  1) pandas - v2.2.1
-  2) pysam -  v0.22.0
-  3) os - Built-in (os)
-  4) ast - Built-in (ast)
-  5) numpy - v1.26.4
-  6) json - v2.0.9
-  7) collections - Built-in (collections)
-  8) from tqdm import tqdm
-  9) from Bio.Seq import Seq - v1.83
-  10) from Bio import SeqIO -v1.83
-  11) more_itertools - v10.2.0
-  12) argparse - v1.1
-  13) from functools import reduce
+(versions listed below but the functions utilized are very basic it will most likely work with most versions):<br>
+  1) pandas - v2.2.1<br>
+  2) pysam -  v0.22.0<br>
+  3) os - Built-in (os)<br>
+  4) ast - Built-in (ast)<br>
+  5) numpy - v1.26.4<br>
+  6) json - v2.0.9<br>
+  7) collections - Built-in (collections)<br>
+  8) from tqdm import tqdm<br>
+  9) from Bio.Seq import Seq - v1.83<br>
+  10) from Bio import SeqIO -v1.83<br>
+  11) more_itertools - v10.2.0<br>
+  12) argparse - v1.1<br>
+  13) from functools import reduce<br>
 
 # HOW TO RUN:
 
