@@ -80,7 +80,7 @@ This program will provide you all of the output no matter the results. You can a
 This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
 
 # Log
-August 19, 2025: v1.3.4-beta uploaded with some small changes. The Filter column was renamed Flags, and 'Good_Row' is now relabeled as No_Flags. This is to better reinforce these are just suggestions to check not 100% rely on. <br> 
+August 19, 2025: v1.3.4-beta uploaded with some small changes. The Filter column was renamed Flags, and 'Good_Row' value within that column is now 'No_Flags'. This is to better reinforce these are just suggestions to check not 100% rely on. <br> 
 August 13, 2025: Complete rework of the element divergence estimates. <br>
 July 1, 2025: Sometimes repeatmasker does not include an ID column (#14). Added a fix to work around this. <br>
 June 20, 2025: Fixed minor bug where TWIN PRIMING elements orientation was not caught with Tail Checks. <br>
