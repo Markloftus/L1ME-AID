@@ -1,7 +1,7 @@
 # Current Version: L1ME-AID (v1.3.4-beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
 -Note: Starting at Version 1.3.0-beta multiple column names have been adjusted. This is to better reflect that some sequences are not TEs. </br>
--Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped.<br>
+-Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped. PLEASE be aware this is only tested for TSD finding for INSERTIONS only. It will run on all rows as L1ME-AID expects only insertions but if you are just using L1ME-AID to check DEL calls this can be deceiving if you try and run TSDs as well. <br>
 
 ***How can I cite?***</br>
 We are currently working on polishing L1ME-AID and on a manuscript. Currently, if you are using L1ME-AID and wanting to cite it please use Logsdon, G.A., Ebert, P., Audano, P.A. et al. Complex genetic variation in nearly complete human genomes. Nature (2025). https://doi.org/10.1038/s41586-025-09140-6<br>
@@ -24,7 +24,7 @@ This program was tested on Linux (Mint 21.2). It has not been tested on Mac/PC.
 A standard computer with enough RAM to support the in-memory operations/dataset you provide.
 
 ## Python Dependencies 
-(versions listed below but the functions utilized are very basic it will most likely work with most versions):<br>
+(versions are listed below, but the functions utilized are very basic it will most likely work with most versions. Additionally, many of these are built-in to python (e.g., argparse):<br>
   1) pandas - v2.2.1<br>
   2) pysam -  v0.22.0<br>
   3) os - Built-in (os)<br>
@@ -35,7 +35,7 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
   8) from tqdm import tqdm<br>
   9) from Bio.Seq import Seq - v1.83<br>
   10) from Bio import SeqIO -v1.83<br>
-  11) more_itertools - v10.2.0<br>
+  11) more_itertools - v10.2.0 <- you can get more_itertools through pip if Anaconda is no longer available to you<br>
   12) argparse - v1.1<br>
   13) from functools import reduce<br>
 
