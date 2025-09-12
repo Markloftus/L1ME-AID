@@ -32,12 +32,11 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
   5) numpy - v1.26.4<br>
   6) json - v2.0.9<br>
   7) collections - Built-in (collections)<br>
-  8) from tqdm import tqdm<br>
-  9) from Bio.Seq import Seq - v1.83<br>
-  10) from Bio import SeqIO -v1.83<br>
-  11) more_itertools - v10.2.0 <- you can get more_itertools through pip if Anaconda is no longer available to you<br>
-  12) argparse - v1.1<br>
-  13) from functools import reduce<br>
+  8) from Bio.Seq import Seq - v1.83<br>
+  9) from Bio import SeqIO -v1.83<br>
+  10) more_itertools - v10.2.0 <- you can get more_itertools through pip if Anaconda is no longer available to you<br>
+  11) argparse - v1.1<br>
+  12) from functools import reduce<br>
 
 # HOW TO RUN:
 
@@ -80,7 +79,7 @@ This program will provide you all of the output no matter the results. You can a
 This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
 
 # Log
-September 12, 2025: reuploaded 1.3.4. On a compute cluster a comment was acting as a non-ASCII character so I removed that comment. All functions stayed the same. 
+September 12, 2025: reuploaded 1.3.4. On a compute cluster a comment was acting as a non-ASCII character so I removed that comment. All functions stayed the same. I also removed the need for tqdm. Trying to start limiting external packages required to make things simpler. 
 August 19, 2025: v1.3.4-beta uploaded with some small changes. The Filter column was renamed Flags, and 'Good_Row' value within that column is now 'No_Flags'. This is to better reinforce these are just suggestions to check not 100% rely on. <br> 
 August 13, 2025: Complete rework of the element divergence estimates. <br>
 July 1, 2025: Sometimes repeatmasker does not include an ID column (#14). Added a fix to work around this. <br>
