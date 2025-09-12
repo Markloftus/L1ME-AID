@@ -75,8 +75,8 @@ Please pay attention to the following columns:<br>
 # Please Remember:
 This program will provide you all of the output no matter the results. You can always choose to ignore the results if you think something is wrongly annotated. It is only here to help you in finding active elements mobilized by L1 machinery. This is still in beta so it might not be perfect. I usually perform manual curation of calls after. 
 
-# License
-This project is covered under the GNU Lesser General Public License, version 3.0 (LGPL-3.0)
+## License
+This project is licensed under the terms of the [GNU Lesser General Public License v3.0](https://www.gnu.org/licenses/lgpl-3.0.html) or later.
 
 # Log
 September 12, 2025: Verson 1.4.0-beta uploaded after accidentally setting L1ME-AID up on a compute cluster that was pointing to a python2 installation I found some bugs in element proportion calculations. This shouldnt break if installed with python3 but made some quick changes to help ensure if others accidentally use python2 it shouldnt break. <br>
