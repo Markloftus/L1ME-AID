@@ -5,7 +5,6 @@ import ast
 import numpy as np
 import json
 import collections
-from tqdm import tqdm
 from Bio.Seq import Seq
 from Bio import Align
 from Bio import SeqIO
@@ -570,7 +569,7 @@ def cleanDataTEPercentage(df):
         else:
             df2[col] = val
 
-    for row in tqdm(df2.index):
+    for row in df2.index:
         hits_val = df2.at[row, 'Element_Hits'] if 'Element_Hits' in df2.columns else 'NONE'
         if hits_val == 'NONE' or hits_val is None:
             continue
@@ -805,7 +804,7 @@ def pullTSD(df,genome):
     df2 = df.copy()
     
     print("Finding TSDs")
-    for row in tqdm(df2.index):
+    for row in df2.index:
         
         # Pull Nucleotides from Insertion Coordinate
         segment = str(df2.at[row,'CHROM'])+":"+str(int(df2.at[row,'POS']))+"-"+str(int(df2.at[row,'POS'])+40)
