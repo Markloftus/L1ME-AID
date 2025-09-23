@@ -555,7 +555,6 @@ def cleanDataTEPercentage(df):
 
     df2 = df.copy()
 
-    # Ensure expected columns exist
     defaults = {
         'Element_Annotation': 'No_Element_Annotation',
         'Element_Divergence': 0.0,
@@ -574,14 +573,12 @@ def cleanDataTEPercentage(df):
         if hits_val == 'NONE' or hits_val is None:
             continue
 
-        # Upper length guard
         seq_len_recorded = int(df2.at[row, 'Sequence_Length']) if 'Sequence_Length' in df2.columns else 0
         if seq_len_recorded > 50000:
             df2.at[row, 'Element_Annotation'] = 'NOT_TESTED_BEYOND_UPPER_SEQ_LENGTH'
             df2.at[row, 'Element_Divergence'] = 100.0
             continue
 
-        # Sequence and length
         sequence = df2.at[row, 'Sequence'] if 'Sequence' in df2.columns else ''
         seqlen = len(sequence) if isinstance(sequence, str) else max(seq_len_recorded, 0)
         if seqlen <= 0:
@@ -597,10 +594,8 @@ def cleanDataTEPercentage(df):
         try:
             teHitList = ast.literal_eval(str(hits_val))
         except Exception:
-            # If malformed, skip this row
             continue
 
-        # Process hits
         for hit in teHitList:
             try:
                 parts = str(hit).split()
@@ -612,7 +607,6 @@ def cleanDataTEPercentage(df):
             except Exception:
                 continue
 
-            # Clamp to sequence bounds
             if start < 1:
                 start = 1
             if end > seqlen:
@@ -622,28 +616,22 @@ def cleanDataTEPercentage(df):
 
             hit_len = end - start + 1  # inclusive length
 
-            # Track designation
             elem_to_design[element] = designation
 
-            # Track divergences per element
             elem_div_list.setdefault(element, []).append(divergence)
 
-            # Per-element coverage map
             if element not in elem_cov:
                 elem_cov[element] = [0] * (seqlen + 1)
 
-            # Update per-base coverage (total and per element)
             for pos in range(start, end + 1):
                 base_cov_total[pos] += 1
                 elem_cov[element][pos] += 1
 
-            # Weighted divergence accumulators
             if element not in elem_weight:
                 elem_weight[element] = {'wdiv': 0.0, 'len': 0}
             elem_weight[element]['wdiv'] += divergence * hit_len
             elem_weight[element]['len'] += hit_len
 
-        # Percentage of sequence annotated by ANY element
         unique_cov = sum(1 for v in base_cov_total[1:] if v > 0)
         tePercentage = unique_cov / seqlen if seqlen > 0 else 0.0
         df2.at[row, 'Element_Percentage'] = float(tePercentage)
@@ -652,7 +640,6 @@ def cleanDataTEPercentage(df):
             continue
 
         if len(elem_cov) == 1:
-            # Single element case
             mykey = next(iter(elem_cov.keys()))
             df2.at[row, 'Element_Designation'] = elem_to_design.get(mykey, 'NONE')
             df2.at[row, 'Element_Proportion'] = {mykey: tePercentage}
@@ -660,7 +647,7 @@ def cleanDataTEPercentage(df):
             vals = elem_div_list.get(mykey, [])
             df2.at[row, 'Element_Divergence'] = float(np.median(vals)) if len(vals) > 0 else 0.0
         else:
-            # Multiple elements: pick element with max unique coverage proportion
+
             proportions = {}
             for el, cov in elem_cov.items():
                 el_cov = sum(1 for v in cov[1:] if v > 0)
@@ -671,7 +658,6 @@ def cleanDataTEPercentage(df):
             df2.at[row, 'Element_Proportion'] = proportions
             df2.at[row, 'Element_Annotation'] = maxKey
 
-            # Proper weighted average divergence for the chosen element
             w = elem_weight.get(maxKey, {'wdiv': 0.0, 'len': 0})
             df2.at[row, 'Element_Divergence'] = float(w['wdiv'] / w['len']) if w['len'] > 0 else 0.0
 
@@ -806,22 +792,18 @@ def pullTSD(df,genome):
     print("Finding TSDs")
     for row in df2.index:
         
-        # Pull Nucleotides from Insertion Coordinate
         segment = str(df2.at[row,'CHROM'])+":"+str(int(df2.at[row,'POS']))+"-"+str(int(df2.at[row,'POS'])+40)
         coordinateSeq = str(''.join(pysam.faidx(genome, segment).split()[1:])).upper()
         
-        #Align the coordinates to the sequence provided
         aligner = Align.PairwiseAligner()
         aligner.mode = 'global'
         alignments = aligner.align(str(df2.at[row,'Sequence'].upper()), coordinateSeq)
         alignment = alignments[0]
 
-        #Build a dataframe
         seq1=[str(x).upper() for x in alignment[0,:]]
         seq2 =[str(y).upper() for y in alignment[1,:]]
         tempDF = pd.DataFrame(data=[seq1,seq2]).copy()
 
-        #Drop the columns that dont agree
         goodColumns=[]
         columnInfo={}
         for column in tempDF.columns:
@@ -831,7 +813,6 @@ def pullTSD(df,genome):
             else:
                 continue
                     
-        #Build new dataframe with only shared nucleotides and find the longest stretch
         tempDF2 = tempDF[goodColumns].copy()
         sublists ={len(x):x for x in find_consecutive_sublists(tempDF2.columns)}
         if len(sublists)==0:
@@ -840,12 +821,11 @@ def pullTSD(df,genome):
         	longestList = sorted(sublists.keys())[-1]
         	consensus = ''.join([columnInfo[x] for x in sublists[longestList]])
         
-        #Build a consensus sequence of the columns nucleotides
+
         if len(consensus)>=10 and consensus != 'NONE':
             tsdDict[row] = consensus
         else:
             
-            # Pull Nucleotides from Insertion Coordinate
             segment = str(df2.at[row,'CHROM'])+":"+str(int(df2.at[row,'POS'])-30)+"-"+str(int(df2.at[row,'POS'])+30)
             coordinateSeq = str(''.join(pysam.faidx(genome, segment).split()[1:])).upper()
             
@@ -869,8 +849,6 @@ def pullTSD(df,genome):
                     x+=1
                     
             newList=collections.Counter(list(set(kmerSequenceList))+list(set(kmerBackList))+list(set(kmerFrontList)))
-            #print('\n')
-            #print(newList)
             newDict = {x:len(x) for x,y in newList.items() if y>1}
             if len(newDict)>0:
                 tsdDict[row] = max(newDict, key=newDict.get)
@@ -963,7 +941,6 @@ def noTailHailMary(df):
 				rev_pos = len(df2.at[row,'Sequence'].split(revmatchedKmerKey)[0])
 				forw_pos = len(df2.at[row,'Sequence'].split(forwardmatchedKmerKey)[-1])
 
-				# Choose the earlier one
 				if rev_pos <= forw_pos:
 				    df2.at[row,'Tail_Begins'] = rev_pos
 				    tail_type = 'Possible_MutatedOrTruncated_T-Tail'
@@ -990,7 +967,6 @@ def noTailHailMary(df):
 def main():
 
 	global args 
-	# Ask for user inputs
 	parser = ap.ArgumentParser()
 	parser.add_argument("-i", "--input", dest="input", required=True, help="Please specify the path to the fasta file that you ran RepeatMasker on.")
 	parser.add_argument("-r", "--repeats", dest="Repeat", required=True, help="Please specify the path to the RepeatMasker output file.")
@@ -1035,11 +1011,9 @@ def main():
 
 	insDF['Sequence_Length']=[len(insDF.at[x,'Sequence']) for x in insDF.index]
 
-
 	def process_dataframe(insDF, functions):
 		return reduce(lambda df, func: func(df), functions, insDF)
 
-	#processing functions order
 	processing_functions = [cleanDataTEPercentage, orientationFinder, tailCounter, aluLinker, tailCounterCheck, finalQuickCheck, finalQuickCheck2, repeatmaskerPatternFilter, findTwinPriming, simpleRepeatCheck, noTailHailMary]
 
 	insDF_Filtered9 = process_dataframe(insDF, processing_functions)
