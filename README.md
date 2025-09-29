@@ -1,6 +1,5 @@
 # Current Version: L1ME-AID (v1.4.0-beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
--Note: Starting at Version 1.3.0-beta multiple column names have been adjusted. This is to better reflect that some sequences are not TEs. </br>
 -Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped. PLEASE be aware this is only tested for TSD finding for INSERTIONS only. It will run on all rows, as L1ME-AID expects only insertions, but if you are just using L1ME-AID to check DEL calls this can be deceiving if you try and run TSDs as well. <br>
 
 ***How can I cite?***</br>
