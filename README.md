@@ -1,6 +1,7 @@
 <p align="center">
 <img src="limeaid.jpeg?raw=true" width="350" height="350">
 </p>
+
 ## L1ME-AID (L1 Mediated Annotation and Insertion Detector)
 
 L1ME-AID is a simple python script that takes two files as input:<br>
