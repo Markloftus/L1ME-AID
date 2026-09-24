@@ -1,5 +1,5 @@
 <p align="center">
-<img src="limeaid.jpeg?raw=true" width="350" height="350">
+<img src="limeaid.png?raw=true" width="350" height="350">
 </p>
 
 # L1ME-AID (L1 Mediated Annotation and Insertion Detector)
