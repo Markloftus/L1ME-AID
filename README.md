@@ -10,7 +10,8 @@ L1ME-AID is a simple python script that takes two files as input:<br>
 
 ## Current Version: L1ME-AID (v1.4-beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
--Note: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped. PLEASE be aware this is only tested for TSD finding for INSERTIONS only. It will run on all rows, as L1ME-AID expects only insertions, but if you are just using L1ME-AID to check DEL calls this can be deceiving if you try and run TSDs as well. <br>
+-Note: If you are trying to use Pandas v3 then use the limeaid.v1.4-beta_pandas2-3.py this should fix any issues you might run into if you are using Pandas v3.
+-Note 2: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped. PLEASE be aware this is only tested for TSD finding for INSERTIONS only. It will run on all rows, as L1ME-AID expects only insertions, but if you are just using L1ME-AID to check DEL calls this can be deceiving if you try and run TSDs as well. <br>
 
 ***How can I cite?***</br>
 We are currently working on polishing L1ME-AID and on a manuscript. If you are using L1ME-AID and wanting to cite it please use Logsdon, G.A., Ebert, P., Audano, P.A. et al. Complex genetic variation in nearly complete human genomes. Nature (2025). https://doi.org/10.1038/s41586-025-09140-6<br>
@@ -27,7 +28,7 @@ A standard computer with enough RAM to support the in-memory operations/dataset 
 
 ## Python Dependencies 
 (versions are listed below, but the functions utilized are very basic it will most likely work with most versions. Additionally, many of these are built-in to python (e.g., argparse):<br>
-  1) pandas - v2.2.1<br>
+  1) pandas - v2.2.1 <- if you use pandas v3 then use the pandas2-3.py version see comment above^<br>
   2) pysam -  v0.22.0<br>
   3) os - Built-in (os)<br>
   4) ast - Built-in (ast)<br>
