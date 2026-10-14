@@ -10,7 +10,7 @@ L1ME-AID is a simple python script that takes two files as input:<br>
 
 ## Current Version: L1ME-AID (v1.4-beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
--Note: If you are trying to use Pandas v3 then use the limeaid.v1.4-beta_pandas2-3.py this should fix any issues you might run into if you are using Pandas v3. <br>
+-Note 1: If you are trying to use Pandas v3 then use the limeaid.v1.4-beta_pandas2-3.py this should fix any issues you might run into if you are using Pandas v3. <br>
 -Note 2: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped. PLEASE be aware this is only tested for TSD finding for INSERTIONS only. It will run on all rows, as L1ME-AID expects only insertions, but if you are just using L1ME-AID to check DEL calls this can be deceiving if you try and run TSDs as well. <br>
 
 ***How can I cite?***</br>
@@ -82,7 +82,8 @@ This program will provide you all of the output no matter the results. You can a
 This project is licensed under the terms of the [GNU Lesser General Public License v3.0](https://www.gnu.org/licenses/lgpl-3.0.html) or later.
 
 # Log
-September 12, 2025: Verson 1.4.0-beta uploaded after accidentally setting L1ME-AID up on a compute cluster that was pointing to a python2 installation I found some bugs in element proportion calculations. This shouldnt break if installed with python3 but made some quick changes to help ensure if others accidentally use python2 it shouldnt break. <br>
+October 13, 2026: Version 1.4.0-beta_pandas2-3 uploaded. L1ME-AID was tested using Pandas v2 but some people mentioned issues with Pandas v3. This script should work with v3. 
+September 12, 2025: Version 1.4.0-beta uploaded after accidentally setting L1ME-AID up on a compute cluster that was pointing to a python2 installation I found some bugs in element proportion calculations. This shouldnt break if installed with python3 but made some quick changes to help ensure if others accidentally use python2 it shouldnt break. <br>
 September 12, 2025: reuploaded 1.3.4. On a compute cluster a comment was acting as a non-ASCII character so I removed that comment. All functions stayed the same. I also removed the need for tqdm. Trying to start limiting external packages required to make things simpler. <br>
 August 19, 2025: v1.3.4-beta uploaded with some small changes. The Filter column was renamed Flags, and 'Good_Row' value within that column is now 'No_Flags'. This is to better reinforce these are just suggestions to check not 100% rely on. <br> 
 August 13, 2025: Complete rework of the element divergence estimates. <br>
