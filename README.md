@@ -10,7 +10,7 @@ L1ME-AID is a simple python script that takes two files as input:<br>
 
 ## Current Version: L1ME-AID (v1.4-beta)
 ***If you are looking for an earlier version (e.g., v1.0.0-beta) check the previousVersions folder.*** </br>
--Note 1: If you are trying to use Pandas v3 then use the limeaid.v1.4-beta_pandas2-3.py this should fix any issues you might run into if you are using Pandas v3. <br>
+-Note 1: If you are trying to use Pandas v3 then use the limeaid.v1.4-beta_pandas2-3.py this should fix any issues you might run into if you are using Pandas v3. <br><br>
 -Note 2: Beginning at Version 1.1.0-beta L1ME-AID will check for TSD sequence if you provide the reference genome as -g and name your sequences as 'chromosome-position-anythingElse' (e.g., chr1-1002321-whatever). TSD check will only happen if you give -g a path to a reference file otherwise this functionality is skipped. PLEASE be aware this is only tested for TSD finding for INSERTIONS only. It will run on all rows, as L1ME-AID expects only insertions, but if you are just using L1ME-AID to check DEL calls this can be deceiving if you try and run TSDs as well. <br>
 
 ***How can I cite?***</br>
